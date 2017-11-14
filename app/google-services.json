@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "446019113504",
+    "firebase_url": "https://hospbooking-7fac3.firebaseio.com",
+    "project_id": "hospbooking-7fac3",
+    "storage_bucket": "hospbooking-7fac3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446019113504:android:b844c225950e0aa4",
+        "android_client_info": {
+          "package_name": "com.app.hosbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446019113504-g5svvda8iufnjkoe3vakakikj00djqua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAanEM9pcOQqXio1QzsbZM0SfSdvenwijE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
