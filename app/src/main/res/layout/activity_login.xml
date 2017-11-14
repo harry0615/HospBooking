@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+     >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43.3dp"
+        android:layout_marginLeft="21.8dp"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ch_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="6.8dp"
+        android:background="@drawable/bt_back"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back"
+        android:layout_marginLeft="54dp"
+        android:textSize="19sp"
+        android:textColor="#1d1d1d"
+        android:lineSpacingExtra="-15.8sp"
+        android:text="로그인"
+        />
+
+    <TextView
+        android:id="@+id/input_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_title"
+        android:layout_marginTop="6.5dp"
+        android:layout_marginLeft="54dp"
+        android:textSize="10sp"
+        android:textColor="#9a9aaa"
+        android:lineSpacingExtra="-6.8sp"
+        android:text="LOGIN"
+        />
+
+    <RelativeLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@+id/input_subtitle"
+        android:layout_marginTop="6.5dp"
+        android:background="@drawable/input_area_2"
+        >
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="64.3dp"
+            android:layout_marginTop="6.5dp"
+            android:hint="Your E-mail"
+            android:textColorHint="#a9a9b4"
+            android:paddingTop="2dp"
+            android:paddingLeft="50dp"
+            android:textColor="#473aea"
+            android:textSize="14.5dp"
+            android:lineSpacingExtra="-11.3sp"
+            android:singleLine="true"
+            android:background="#00ffffff"
+            />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/et_email"
+            android:background="#f2f2f2"
+            />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="69.3dp"
+            android:layout_below="@+id/line"
+            android:hint="Password"
+            android:textColorHint="#a9a9b4"
+            android:paddingTop="2dp"
+            android:paddingLeft="50dp"
+            android:textColor="#473aea"
+            android:textSize="14.5dp"
+            android:singleLine="true"
+            android:background="#00ffffff"
+            android:inputType="textPassword"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/find_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout"
+        android:layout_marginTop="5.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22.3dp"
+        android:textSize="13sp"
+        android:textColor="#473aea"
+        android:lineSpacingExtra="-9.8sp"
+        android:text="비밀번호 찾기"
+        />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_pass"
+        android:layout_marginLeft="48.3dp"
+        android:layout_marginTop="31dp"
+        android:text="로그인"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="-0.5sp"
+        android:gravity="center"
+        android:background="@drawable/login_bt"
+        />
+
+    <RelativeLayout
+        android:id="@+id/facebook_layout"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="58.3dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sns_login_bt"
+        >
+
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:background="@drawable/facebook_logo"
+            />
+
+        <TextView
+            android:id="@+id/f_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.5dp"
+            android:layout_toRightOf="@+id/facebook_icon"
+            android:layout_marginLeft="7.8dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#473aea"
+            android:lineSpacingExtra="2.5sp"
+            android:text="로그인"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/google_layout"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="58.3dp"
+        android:layout_below="@+id/facebook_layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sns_login_bt"
+        >
+
+        <ImageView
+            android:id="@+id/google_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:background="@drawable/google_logo"
+            />
+
+        <TextView
+            android:id="@+id/g_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.5dp"
+            android:layout_toRightOf="@+id/google_icon"
+            android:layout_marginLeft="7.8dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#473aea"
+            android:lineSpacingExtra="2.5sp"
+            android:text="로그인"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/joint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_layout"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:textColor="#a5a5bf"
+        android:lineSpacingExtra="2.5sp"
+        android:gravity="center_horizontal"
+        android:text="무료로 회원가입 하세요."
+        />
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joint_title"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14.5sp"
+        android:textColor="#473aea"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_horizontal"
+        android:text="회원가입 "
+        />
+
+
+</RelativeLayout>

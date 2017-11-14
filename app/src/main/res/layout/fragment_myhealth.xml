@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="10dp"
+        android:background="#f7faff"
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/a_main1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46.8dp"
+            >
+            <Button
+                android:id="@+id/main_button1"
+                android:layout_width="14.8dp"
+                android:layout_height="15.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/prediction_icon"
+                />
+
+            <TextView
+                android:id="@+id/main_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/main_button1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="#473aea"
+                android:lineSpacingExtra="-8.3sp"
+                android:text="질병예측"
+                />
+
+            <Button
+                android:id="@+id/right1"
+                android:layout_width="6.5dp"
+                android:layout_height="11.8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/main_text1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/sub_bt_arrow"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/a_main2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26.8dp"
+            >
+            <Button
+                android:id="@+id/main_button2"
+                android:layout_width="14.8dp"
+                android:layout_height="15.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/reservation_icon"
+                />
+
+            <TextView
+                android:id="@+id/main_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/main_button2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="#473aea"
+                android:lineSpacingExtra="-8.3sp"
+                android:text="추천병원 예약"
+                />
+
+            <Button
+                android:id="@+id/right2"
+                android:layout_width="6.5dp"
+                android:layout_height="11.8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/main_text2"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/sub_bt_arrow"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/logo_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_top"
+        >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/check"
+        android:layout_width="95.3dp"
+        android:layout_height="90.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/measure_bt_area"
+        >
+
+        <Button
+            android:id="@+id/main_button4"
+            android:layout_width="30dp"
+            android:layout_height="25.3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/measure_icon"
+            />
+        <TextView
+            android:id="@+id/main_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_button4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="-8.3sp"
+            android:text="측정"
+
+            />
+
+    </RelativeLayout>
+  
+</RelativeLayout>

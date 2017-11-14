@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26.8dp"
+        android:layout_marginLeft="21.8dp"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ch_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_loginicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.5dp"
+            android:background="@drawable/user_login_on"
+            />
+
+        <TextView
+            android:id="@+id/iv_loginid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_loginicon"
+            android:layout_marginRight="4.5dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#1d1d1e"
+            android:lineSpacingExtra="-8.3sp"
+            android:gravity="center_horizontal"
+            android:text="이봉진"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_loginid"
+            android:layout_marginRight="4.5dp"
+            android:layout_centerVertical="true"
+            android:textSize="11.5sp"
+            android:textColor="#473aea"
+            android:lineSpacingExtra="-8.3sp"
+            android:gravity="center_horizontal"
+            android:text="LOGIN"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="83.5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/a_main1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pocus_area"
+            >
+                <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                    <Button
+                        android:id="@+id/main_button1"
+                        android:layout_width="18.3dp"
+                        android:layout_height="18.3dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_icon_on"
+                        />
+
+                        <TextView
+                        android:id="@+id/main_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main_button1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12.6sp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="-8.3sp"
+                        android:text="홈"
+                        />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/a_main2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <Button
+                    android:id="@+id/main_button2"
+                    android:layout_width="18.3dp"
+                    android:layout_height="18.3dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/health_icon_off"
+                    />
+
+                <TextView
+                    android:id="@+id/main_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_button2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12.6sp"
+                    android:textColor="#a9a9b4"
+                    android:lineSpacingExtra="-8.3sp"
+                    android:text="나의건강"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/a_main3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/reservecount"
+                android:layout_width="30.8dp"
+                android:layout_height="30.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="1"
+                android:textSize="12.4sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="@drawable/noti_icon"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <Button
+                    android:id="@+id/main_button3"
+                    android:layout_width="18.3dp"
+                    android:layout_height="18.3dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/reser_icon_off"
+                    />
+
+
+                <TextView
+                    android:id="@+id/main_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_button3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12.6sp"
+                    android:textColor="#a9a9b4"
+                    android:lineSpacingExtra="-8.3sp"
+                    android:text="예약현황"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/a_main4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <Button
+                    android:id="@+id/main_button4"
+                    android:layout_width="18.3dp"
+                    android:layout_height="18.3dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/myinfo_icon_off"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/main_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_button4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12.6sp"
+                    android:textColor="#a9a9b4"
+                    android:lineSpacingExtra="-8.3sp"
+                    android:text="나의정보"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_above="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8d8d8"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_bottom"
+        android:background="#fafbfe"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/webviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

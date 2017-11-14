@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafbfe"
+     >
+
+    <TextView
+        android:id="@+id/main_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49.5dp"
+        android:textSize="19sp"
+        android:textColor="#26252a"
+        android:lineSpacingExtra="-8.3sp"
+        android:text="이봉진"
+        />
+
+    <TextView
+        android:id="@+id/main_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="13sp"
+        android:textColor="#473aea"
+        android:lineSpacingExtra="-8.3sp"
+        android:text="의료소비자"
+        />
+
+    <TextView
+        android:id="@+id/main_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14.3dp"
+        android:textSize="13.5sp"
+        android:textColor="#2a335f"
+        android:lineSpacingExtra="-8.3sp"
+        android:text="lbjjang2@gmail.com"
+        />
+
+    <TextView
+        android:id="@+id/main_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_text3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bt_logoout"
+        android:textSize="13.5sp"
+        android:textColor="#6c7283"
+        android:lineSpacingExtra="-8.3sp"
+        android:text="로그 아웃"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

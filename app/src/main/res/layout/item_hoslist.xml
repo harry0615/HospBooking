@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+	>
+
+		<ImageView
+		android:id="@+id/logo_img"
+		android:layout_width="21dp"
+		android:layout_height="15.3dp"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="23dp"
+		android:background="@drawable/hospital_icon"
+		/>
+
+    	<RelativeLayout 
+        android:id="@+id/logo_data_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/logo_img"
+		android:layout_centerVertical="true"
+	    >
+	    	<TextView
+				android:id="@+id/title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="12dp"
+				android:text="초록 병원 서울 강남"
+				android:lineSpacingExtra="-12.8sp"
+				android:textColor="#3f3f43"
+				android:textSize="16sp"
+				/>
+
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/title"
+				android:layout_marginLeft="12dp"
+				android:text="서울특별시 서초구 서초동 1376-3"
+				android:textColor="#473aea"
+				android:textSize="12sp"
+				android:layout_marginTop="9.3dp"
+				/>
+
+       </RelativeLayout>
+</RelativeLayout>

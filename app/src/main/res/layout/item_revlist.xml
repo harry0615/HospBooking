@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+	>
+
+		<TextView
+		android:id="@+id/txt1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="22.5dp"
+		android:text="[예약요청]"
+		android:layout_alignBottom="@+id/name"
+		android:lineSpacingExtra="-12.8sp"
+		android:textColor="#30db80"
+		android:textSize="11.5sp"
+
+		/>
+
+	<TextView
+		android:id="@+id/name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="12dp"
+		android:layout_toRightOf="@+id/txt1"
+		android:text="초록 병원 서울 강남"
+		android:lineSpacingExtra="-12.8sp"
+		android:textColor="#3f3f43"
+		android:textSize="16sp"
+
+		/>
+	<TextView
+		android:id="@+id/time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/name"
+		android:layout_alignLeft="@+id/txt1"
+		android:text="2017년 8월 20일 오전 10시 30분"
+		android:lineSpacingExtra="-12.8sp"
+		android:textColor="#473aea"
+		android:textSize="12.6sp"
+		/>
+
+	<TextView
+		android:id="@+id/main_text4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/cancel_bt"
+		android:textSize="13.5sp"
+		android:textColor="#6c7283"
+		android:lineSpacingExtra="-8.3sp"
+		android:text="요청취소"
+		android:gravity="center"
+		/>
+
+
+</RelativeLayout>

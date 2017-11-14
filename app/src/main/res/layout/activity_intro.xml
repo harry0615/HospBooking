@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_intro"
+    android:background="@drawable/splash_bg">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="11.5sp"
+        android:textColor="#2e2ccd"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="8.6sp"
+        android:gravity="center_horizontal"
+        android:text="가정용 기기 데이타 기반"
+        />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/title1"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#2e2ccd"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="6.1sp"
+        android:gravity="center_horizontal"
+        android:text="병원예약 서비스"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/s_text_line" />
+
+    <ImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="119.3dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/s_ch_logo" />
+
+    <ImageView
+        android:id="@+id/sublogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/mainlogo"
+        android:layout_marginTop="104.8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/color_health" />
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublogo"
+        android:layout_marginTop="10.3dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/welcom_to" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_welcome"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/s_text_line" />
+</RelativeLayout>

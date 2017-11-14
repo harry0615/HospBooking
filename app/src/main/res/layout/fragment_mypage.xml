@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/a_main1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46.8dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/main_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/main_button1"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:textColor="#3f3f43"
+                    android:lineSpacingExtra="-8.3sp"
+                    android:text="예약요청 회신대기"
+                    />
+
+                <ImageView
+                    android:id="@+id/right1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/main_text1"
+                    android:layout_alignRight="@+id/main_text1"
+                    android:background="@drawable/sub_tab_p_line"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/a_main2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.8dp"
+                >
+                <TextView
+                    android:id="@+id/main_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/main_button1"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:textColor="#b1b1c0"
+                    android:lineSpacingExtra="-8.3sp"
+                    android:text="예약요청 회신결과"
+                    />
+
+                <ImageView
+                    android:id="@+id/right2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/main_text2"
+                    android:layout_alignRight="@+id/main_text2"
+                    android:background="@drawable/sub_tab_p_line"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="46.8dp"
+        android:layout_below="@+id/main_top"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/res_info"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17.3dp"
+            />
+
+        <TextView
+            android:id="@+id/sub_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#68707d"
+            android:lineSpacingExtra="-8.3sp"
+            android:text="예약요청이 전송된 병원 목록입니다. "
+            />
+
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/hos_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="1"
+        >
+    </GridView>
+  
+</RelativeLayout>

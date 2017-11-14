@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+     >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43.3dp"
+        android:layout_marginLeft="21.8dp"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ch_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="6.8dp"
+        android:background="@drawable/bt_back"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back"
+        android:layout_marginLeft="54dp"
+        android:textSize="19sp"
+        android:textColor="#1d1d1d"
+        android:lineSpacingExtra="-15.8sp"
+        android:text="회원가입"
+        />
+
+    <TextView
+        android:id="@+id/input_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_title"
+        android:layout_marginTop="6.5dp"
+        android:layout_marginLeft="54dp"
+        android:textSize="10sp"
+        android:textColor="#9a9aaa"
+        android:lineSpacingExtra="-6.8sp"
+        android:text="SIGNUP"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="145.5dp"
+        android:layout_below="@+id/input_subtitle"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_member"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="13sp"
+            android:textColor="#473aea"
+            android:lineSpacingExtra="7sp"
+            android:text="진료가 필요한 분은\n의료 소비자로 가입 하시기 바랍니다."
+            />
+
+        <ImageView
+            android:id="@+id/iv_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/signup_user"
+            />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_img1"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="#1d1d1d"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="20dp"
+            android:text="의료 소비자 가입"
+            />
+
+        <RelativeLayout
+            android:id="@+id/inner_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_img1"
+            android:layout_marginLeft="21.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_arrow"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="145.5dp"
+        android:layout_below="@+id/bottom1_layout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_member"
+        >
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="13sp"
+            android:textColor="#473aea"
+            android:lineSpacingExtra="7sp"
+            android:text="정확한 진단을 도와드립니다.\n 병원(의료진)명으로 가입하시기 바랍니다"
+            />
+
+        <ImageView
+            android:id="@+id/iv_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/signup_mteam"
+            />
+
+        <TextView
+            android:id="@+id/subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_img2"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="#1d1d1d"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="20dp"
+            android:text="병원(의료진) 가입"
+            />
+
+        <RelativeLayout
+            android:id="@+id/inner_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_img1"
+            android:layout_marginLeft="21.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_arrow"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
