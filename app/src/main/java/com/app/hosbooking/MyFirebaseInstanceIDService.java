@@ -8,7 +8,7 @@ import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
-    private static final String TAG = "BJLee_MyFirebaseIIDService";
+    private static final String TAG = "Harry_MyFirebaseIIDService";
 
     // [START refresh_token]
     @Override
@@ -53,7 +53,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     }
 
     public static class MyFirebaseMessagingService extends com.google.firebase.messaging.FirebaseMessagingService {
-        private static final String TAG = "BJLee_FirebaseMsgService";
+        private static final String TAG = "Harry_FirebaseMsgService";
 
         // [START receive_message]
         @Override
